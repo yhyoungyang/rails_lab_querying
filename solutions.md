@@ -46,7 +46,7 @@
 
 12) Get the top 3 vehicles with the highest tow fees.
 
-`Vehicle.order(fee: :desc).limit(3)`
+`Vehicle.where.not(fee: nil).order(fee: :desc).limit(3)`
 
 13) Get all vehicles that have a fee assessed which has not been paid.
 
