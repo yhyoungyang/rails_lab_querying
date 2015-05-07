@@ -22,9 +22,6 @@ class CreateLabTables < ActiveRecord::Migration
       t.decimal :fee, precision: 8, scale: 2
       t.boolean :is_paid
       t.text :notes
-
-      t.index :vin, unique: true
-      t.index :category
     end
   end
 end
